@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: menu-server
+    
+  h2:
+    console:
+      path: /h2
+      enabled: true
+      settings:
+        web-allow-others: true
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    
+#eureka:
+#  client:
+#    service-url:
+#     defaultzone: http://localhost:8761/eureka
+#     register-with-eureka: true
+           
+server:
+  port: 8181
